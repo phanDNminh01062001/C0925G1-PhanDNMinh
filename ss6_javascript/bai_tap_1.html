@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>usd_to_VND</title>
+
+</head>
+<body>
+<input type="number" id="usd" placeholder="usd">
+
+<button onclick="Convert()"> Exchange</button>
+
+<p id="result"></p>
+
+<script>
+    function Convert() {
+        let usd = +document.getElementById("usd").value;
+        let rate = 23000;
+        let vnd = usd * rate;
+
+        document.getElementById("result").innerHTML = vnd+ " VND";
+    }
+</script>
+</body>
+</html>
