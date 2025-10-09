@@ -11,7 +11,7 @@
         margin: 20px auto;
     }
     td {
-        border: 0px solid ;
+        border: 0px;
         width: 200px;
         height: 20px;
         text-align: center;
@@ -29,30 +29,47 @@
             <input type="number" id="amount">
         </td>
         <td>
-            <select>
-                <option value="vnd">VND</option>
-                <option value="usd">USD</option>
+            <select id="from">
+                <option value="VND">VND</option>
+                <option value="VND">USD</option>
             </select>
         </td>
         <td>
-            <select>
-                <option value="vnd">VND</option>
-                <option value="usd">USD</option>
+            <select id="to">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
             </select>
         </td>
 
         <td>
-            <button onclick="exchange">Convert</button>
+            <button onclick="exchange()">Convert</button>
         </td>
     </tr>
 
 </table>
-<p id="result"></p>
+<p id="Result">RESULT</p>
 <script>
-    let amount = document.getElementById("amount").value;
-    let fromCurrency = document.getElementById("from").value;
-    let toCurrency = document.getElementById("to").value;
-    let result;
+    function exchange() {
+        let amount = document.getElementById("amount").value;
+        let fromCurrency = document.getElementById("from").value;
+        let toCurrency = document.getElementById("to").value;
+        let result;
+
+        if (fromCurrency === "USD" && toCurrency === "VND") {
+            result =+ (amount * 25000) + " VND";
+        }
+        else if (fromCurrency === "VND" && toCurrency ==="USD"){
+            result =+ (amount / 25000) + " USD";
+        }
+        else if (fromCurrency === "VND") {
+            result =+ amount + " VND";
+        }
+        else {
+            result =+ amount + " USD";
+        }
+
+        document.getElementById("Result").innerHTML = result;
+    }
 
 </script>
 </body>
