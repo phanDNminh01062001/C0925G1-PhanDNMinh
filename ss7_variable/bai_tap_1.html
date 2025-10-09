@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>money_exchange</title>
+</head>
+<body>
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+    td {
+        border: 0px solid ;
+        width: 200px;
+        height: 20px;
+        text-align: center;
+    }
+</style>
+<table>
+    <tr>
+        <td>Amount</td>
+        <td>From Currency</td>
+        <td>To Currency</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="amount">
+        </td>
+        <td>
+            <select>
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select>
+        </td>
+        <td>
+            <select>
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select>
+        </td>
+
+        <td>
+            <button onclick="exchange">Convert</button>
+        </td>
+    </tr>
+
+</table>
+<p id="result"></p>
+<script>
+    let amount = document.getElementById("amount").value;
+    let fromCurrency = document.getElementById("from").value;
+    let toCurrency = document.getElementById("to").value;
+    let result;
+
+</script>
+</body>
+</html>

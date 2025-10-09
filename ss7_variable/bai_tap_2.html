@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<style>
+    
+    table {
+        border-collapse: collapse;
+    }
+    td {
+        border: 0px solid black;
+        width: 200px;
+        height: 40px;
+        text-align: left;
+    }
+    
+</style>
+<body>
+<table>
+    <tr>
+        <td colspan="2">
+            <input type="number" id="num1">
+        </td>
+        <td colspan="2">
+            <input type="number" id="num2">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="addi()">addition (+) </button>
+        </td>
+        <td>
+            <button onclick="subt()">subtraction (-) </button>
+        </td>
+        <td>
+            <button onclick="mult()">multiplication (*) </button>
+        </td>
+        <td>
+            <button onclick="divi()">division (/) </button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function addi() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) + Number(number2);
+        document.getElementById("result").innerHTML = result;
+
+    }
+    function subt() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) - Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function mult() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) * Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function divi() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) / Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+
+</body>
+</html>
