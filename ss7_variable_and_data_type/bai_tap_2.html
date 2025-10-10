@@ -47,29 +47,28 @@
     function addi() {
         let number1 = document.getElementById("num1").value;
         let number2 = document.getElementById("num2").value;
-        let result = Number(number1) + Number(number2);
+        let result = Number(number1) + Number(number2); // Do đây là thực hiện phép cộng số, ko phải cộng chuỗi nên phải dùng "Number(number)"
         document.getElementById("result").innerHTML = result;
 
     }
     function subt() {
         let number1 = document.getElementById("num1").value;
         let number2 = document.getElementById("num2").value;
-        let result = Number(number1) - Number(number2);
+        let result = (number1) - (number2);
         document.getElementById("result").innerHTML = result;
     }
     function mult() {
         let number1 = document.getElementById("num1").value;
         let number2 = document.getElementById("num2").value;
-        let result = Number(number1) * Number(number2);
+        let result = (number1) * (number2);
         document.getElementById("result").innerHTML = result;
     }
     function divi() {
         let number1 = document.getElementById("num1").value;
         let number2 = document.getElementById("num2").value;
-        let result = Number(number1) / Number(number2);
+        let result = (number1) / (number2);
         document.getElementById("result").innerHTML = result;
     }
 </script>
-
 </body>
 </html>

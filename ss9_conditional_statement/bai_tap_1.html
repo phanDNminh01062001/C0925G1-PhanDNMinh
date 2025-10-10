@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh_BMI</title>
+</head>
+<body>
+<h2> Tính chỉ số cân nặng (BMI) </h2>
+Nhập chiều cao: <input type="number" id="heigth" placeholder="meters">
+<br> <br>
+Nhập cân nặng: <input type="number" id="weigth" placeholder="kgs">
+<br> <br>
+<button onclick="Calculation()"> Kết quả</button>
+<p id="Result"></p>
+
+<script>
+    function Calculation() {
+        let height = document.getElementById("heigth").value ;
+        let weigth = document.getElementById("weigth").value ;
+        let bmi = weigth / ( height * height ) ;
+        let result ;
+
+        if (bmi < 18.5) {
+            result ="Underweigth"
+        } else if (bmi < 25.0) {
+            result ="Normal"
+        } else if (bmi < 30.0) {
+            result ="Overweigth"
+        } else {
+            result ="Obese"
+        }
+        document.getElementById("Result").innerHTML = result;
+    }
+</script>
+
+</body>
+</html>
