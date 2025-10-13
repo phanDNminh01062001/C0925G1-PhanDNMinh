@@ -7,8 +7,8 @@
 <body>
 <script>
     let month = +prompt("Nhập tháng");
-    let days ;
-    switch (month){
+    let days;
+    switch (month) {
         case 1:
         case 3:
         case 5:
@@ -26,7 +26,8 @@
         case 11:
             days = "30 ngày";
             break;
-        default: day = null;
+        default:
+            day = null;
     }
     if (days === null) {
         alert(`Tháng ${month} có ${days}`);

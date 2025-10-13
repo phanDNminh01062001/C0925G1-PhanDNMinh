@@ -10,8 +10,14 @@
     let a = prompt("Nhập a");
     let b = prompt("nhập b");
     let x;
-    x = -(b / a)
-    alert(`x = ${x}`)
+    if (a === 0 && b === 0) {
+        alert("Phương trình vô số nghiệm");
+    } else if (a === 0 && b !== 0) {
+        alert("Phương trình vô nghiệm");
+    } else {
+        x = -b / a;
+        alert(`Nghiệm của phương trình x=${x}`);
+    }
 </script>
 </body>
 </html>

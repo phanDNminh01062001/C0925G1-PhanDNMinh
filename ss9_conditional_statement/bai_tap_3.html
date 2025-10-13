@@ -8,12 +8,14 @@
     table {
         border-collapse: collapse;
     }
+
     td {
         border: 6px solid black;
-        width:  60px;
+        width: 60px;
         height: 60px;
         text-align: center;
     }
+
     button {
         background-color: whitesmoke;
         width: 40px;
@@ -27,45 +29,80 @@
 <table>
     <tr>
         <td colspan="4">
-            <input style="font-size: 20px"  type="text" id="view" disabled >
+            <input style="font-size: 20px" type="text" id="view" disabled>
         </td>
     </tr>
     <tr>
-        <td><button type="button" name="btn" value="1" onclick="inputValue(this.value)">1</button></td>
-        <td><button type="button" name="btn" value="2" onclick="inputValue(this.value)">2</button></td>
-        <td><button type="button" name="btn" value="3" onclick="inputValue(this.value)">3</button></td>
-        <td><button type="button" name="phepToan" value="+" onclick="inputValue(this.value)">+</button></td>
+        <td>
+            <button type="button" name="btn" value="1" onclick="inputValue(this.value)">1</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="2" onclick="inputValue(this.value)">2</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="3" onclick="inputValue(this.value)">3</button>
+        </td>
+        <td>
+            <button type="button" name="phepToan" value="+" onclick="inputValue(this.value)">+</button>
+        </td>
     </tr>
     <tr>
-        <td><button type="button" name="btn" value="4" onclick="inputValue(this.value)">4</button></td>
-        <td><button type="button" name="btn" value="5" onclick="inputValue(this.value)">5</button></td>
-        <td><button type="button" name="btn" value="6" onclick="inputValue(this.value)">6</button></td>
-        <td><button type="button" name="phepToan" value="-" onclick="inputValue(this.value)">-</button></td>
+        <td>
+            <button type="button" name="btn" value="4" onclick="inputValue(this.value)">4</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="5" onclick="inputValue(this.value)">5</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="6" onclick="inputValue(this.value)">6</button>
+        </td>
+        <td>
+            <button type="button" name="phepToan" value="-" onclick="inputValue(this.value)">-</button>
+        </td>
     </tr>
     <tr>
-        <td><button type="button" name="btn" value="7" onclick="inputValue(this.value)">7</button></td>
-        <td><button type="button" name="btn" value="8" onclick="inputValue(this.value)">8</button></td>
-        <td><button type="button" name="btn" value="9" onclick="inputValue(this.value)">9</button></td>
-        <td><button type="button" name="phepToan" value="*" onclick="inputValue(this.value)">X</button></td>
+        <td>
+            <button type="button" name="btn" value="7" onclick="inputValue(this.value)">7</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="8" onclick="inputValue(this.value)">8</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="9" onclick="inputValue(this.value)">9</button>
+        </td>
+        <td>
+            <button type="button" name="phepToan" value="*" onclick="inputValue(this.value)">X</button>
+        </td>
     </tr>
     <tr>
-        <td><button type="button" onclick="reset()">C</button></td>
-        <td><button type="button" name="btn" value="0" onclick="inputValue(this.value)">0</button></td>
-        <td><button name="result" onclick="result()">=</button></td>
-        <td><button type="button" name="phepToan" value="/" onclick="inputValue(this.value)">/</button></td>
+        <td>
+            <button type="button" onclick="reset()">C</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="0" onclick="inputValue(this.value)">0</button>
+        </td>
+        <td>
+            <button name="result" onclick="result()">=</button>
+        </td>
+        <td>
+            <button type="button" name="phepToan" value="/" onclick="inputValue(this.value)">/</button>
+        </td>
     </tr>
 </table>
 <script>
     let view = document.getElementById("view");
+
     function inputValue(value) {
         view.value += value;
     }
+
     function result() {
         let result = eval(view.value);
         view.value = result;
     }
+
     function reset() {
-        view.value="";
+        view.value = "";
     }
 </script>
 <body>
