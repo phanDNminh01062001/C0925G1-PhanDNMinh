@@ -7,9 +7,9 @@
 <body>
 <script>
     let phone=+prompt("Nhập số giây gọi");
-    if(phone<=1000)
-        alert(`Số tiền phải trả là ${phone*60} vnđ`);
-    else
+    if(phone<=1000) {
+        alert(`Số tiền phải trả là ${phone*60} vnđ`)
+    } else
         alert(`Số tiền phải trả là + ${(phone-1000)*900+6000} vnđ`);
 </script>
 </body>

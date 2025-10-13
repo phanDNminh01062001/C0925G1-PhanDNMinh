@@ -7,7 +7,11 @@
 <body>
 <script>
     let Number=+prompt("Nhập sô kiểm tra");
-    Number>0? alert("Số lớn hớn 0"):Number===0?alert("Số bằng 0"):alert("Số bé hơn 0");
+    if (Number>0) {
+        alert("Số lớn hớn 0")
+    }else if (Number===0) {
+        alert("Số bằng 0")
+    }else  alert("Số bé hơn 0");
 </script>
 </body>
 </html>
