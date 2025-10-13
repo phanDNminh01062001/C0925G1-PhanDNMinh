@@ -6,42 +6,42 @@
 </head>
 <body>
 <script>
-let salary = prompt("Nhập tiền lương tháng này của bạn");
-let tax;
-let result ;
-if (salary <= 0 ){
-    alert("Hãy nhập mức lương hợp lệ");
-} else if (salary <= 11000000){
-    alert("Bạn không phải nộp thuế thu nhập cá nhân");
-}else if (salary <= 16000000){
-    tax = (salary - 11000000)*0.05;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}else if (salary > 16000000 && salary <= 21000000){
-    tax = 250000 + (salary-16000000)*0.1;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}else if (salary > 21000000 && salary <= 29000000){
-    tax = 750000 + (salary-21000000)*0.15;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}else if (salary > 29000000 && salary <= 43000000){
-    tax = 1950000 + (salary-29000000)*0.2;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}else if (salary > 43000000 && salary <= 63000000){
-    tax = 4750000 + (salary-43000000)*0.25;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}else if (salary > 63000000 && salary <= 91000000){
-    tax = 9750000 + (salary-63000000)*0.3;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}else {
-    tax = 18150000 + (salary-91000000)*0.35;
-    result = salary - tax;
-    alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
-}
+    let salary = prompt("Nhập tiền lương tháng này của bạn");
+    let tax;
+    let result ;
+    if (salary <= 0 ){
+        alert("Hãy nhập mức lương hợp lệ");
+    } else if (salary <= 11000000){
+        alert("Bạn không phải nộp thuế thu nhập cá nhân");
+    }else if (salary <= 16000000){
+        tax = (salary - 11000000)*0.05;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
+    }else if (salary > 16000000 && salary <= 21000000){
+        tax = 250000 + (salary-16000000)*0.1;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
+    }else if (salary > 21000000 && salary <= 29000000){
+        tax = 750000 + (salary-21000000)*0.15;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
+    }else if (salary > 29000000 && salary <= 43000000){
+        tax = 1950000 + (salary-29000000)*0.2;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
+    }else if (salary > 43000000 && salary <= 63000000){
+        tax = 4750000 + (salary-43000000)*0.25;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
+    }else if (salary > 63000000 && salary <= 91000000){
+        tax = 9750000 + (salary-63000000)*0.3;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND`);
+    }else {
+        tax = 18150000 + (salary-91000000)*0.35;
+        result = salary - tax;
+        alert(`Tổng tiền lương tháng này bạn nhận sau thuế là: ${result} VND.`);
+    }
 </script>
 </body>
 </html>
