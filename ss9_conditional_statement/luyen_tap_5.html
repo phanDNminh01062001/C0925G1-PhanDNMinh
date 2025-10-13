@@ -5,6 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let score=+prompt("Nhập điểm kiêm tra"), midScore=+prompt("Nhập điểm giữa kì"),
+        finalScore=+prompt("Nhập điểm cuối kì"), avgScore= (finalScore*5+midScore*3+score*2)/10;
+    if (avgScore>=8) alert("Học lực giỏi");
+    else if(avgScore>=6.5) alert("Học lực khá");
+    else if(avgScore>=5) alert("Học lực trung bình");
+    else alert("Học lực yếu");
+</script>
 </body>
 </html>
