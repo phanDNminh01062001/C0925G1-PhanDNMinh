@@ -5,6 +5,25 @@
     <title>luyen_tap7</title>
 </head>
 <body>
-
+<script>
+    let a = prompt("Nhập a");
+    let b = prompt("Nhập b");
+    let c = prompt("Nhập c");
+    let delta;
+    let x;
+    let x1;
+    let x2;
+    delta = (b*b) - (4*a*c);
+    if (delta > 0) {
+        x1 = (-b + Math.sqrt(delta))/ (2*a);
+        x2 = (-b - Math.sqrt(delta))/ (2*a);
+        alert(`Phương trình có 2 nghiệm phân biệt là x =${x1} và x =${x2}`)
+    } else if (delta === 0) {
+        x = (-b) / (2*a);
+        alert(`Phương trình có nghiệm kép x =${x} `)
+    } else {
+        alert("Phương trình vô nghiệm")
+    }
+</script>
 </body>
 </html>
