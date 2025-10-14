@@ -10,8 +10,14 @@
     let b = +prompt("Nhập 1 cạnh góc vuông ");
     let c = Math.sqrt(a * a - b * b);
     let area;
-    area = 1 / 2 * (b * c);
-    alert(` Diện tích hình tam giác = ${area}`);
+    if (a > 0 && b > 0) {
+        area = 1 / 2 * (b * c);
+        alert(` Diện tích hình tam giác vuông = ${area}`);
+    }else {
+        alert("Không phải độ dài cạnh tam giác");
+    }
+
+
 </script>
 </body>
 </html>

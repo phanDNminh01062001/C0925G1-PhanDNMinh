@@ -6,9 +6,13 @@
 </head>
 <body>
 <script>
-    let sides = +prompt("Nhập cạnh hình vuông ...:");
-    let area = sides * 2;
-    alert(`Diện tích hình vuông = ${area}`);
+    let side = +prompt("Nhập cạnh hình vuông ...:");
+    let area = side * 2;
+    if (side <=0){
+        alert("Không đúng định dạng của cạnh hình vuông");
+    } else {
+        alert(`Diện tích hình vuông = ${area}`);
+    }
 </script>
 </body>
 </html>
