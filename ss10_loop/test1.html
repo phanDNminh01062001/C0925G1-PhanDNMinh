@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test1</title>
+</head>
+<body>
+
+<script>
+    let menu;
+    do {
+        menu = prompt(
+            "------- Quản lý danh sách sinh viên -------\n" +
+            "---Chọn số để hiển thị chức năng---\n" +
+            "1. Hiển thị danh sách sinh viên\n" +
+            "2. Thêm sinh viên\n" +
+            "3. Xóa sinh viên\n" +
+            "4. Kết thúc chương trình\n"
+        );
+        switch (menu) {
+            case "1":
+                alert("Hiển thị danh sách sinh viên");
+                break
+            case "2":
+                alert("Thêm sinh viên");
+                break
+            case "3":
+                alert("Xóa sinh viên");
+                break
+            case "4":
+                let Exit = confirm("Bạn có muốn kết thúc chương trình?");
+                if (Exit) {
+                    alert("Chương trình kết thúc!");
+                    menu = "4";
+                } else {
+                    menu = "";
+                }
+                break;
+        }
+    } while (menu !== "4")
+
+</script>
+</body>
+</html>

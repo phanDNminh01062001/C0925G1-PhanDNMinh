@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test_2</title>
+</head>
+<body>
+<script>
+    let menu;
+    let total = 0;
+    let orderList = "";
+    let coffee = 0;
+    let cacao = 0;
+    let orange = 0;
+
+    do {
+        orderList = "";
+        if (coffee > 0) orderList += "Cà phê x" + coffee + "\n";
+        if (cacao > 0) orderList += "Ca cao x" + cacao + "\n";
+        if (orange > 0) orderList += "Nước cam x" + orange + "\n";
+        menu = prompt(
+            "------- Quản lý danh sách đồ uống -------\n" +
+            "---Chọn số để thêm sản phẩm---\n" +
+            "1. Cà phê     :10k\n" +
+            "2. Ca cao     :15k\n" +
+            "3. Nước cam   :20k\n" +
+            "4. Xuất hóa đơn\n" +
+            "------------Danh sách đã chọn----------------\n" +
+            orderList + "\nTổng hóa đơn: " + total + "K"
+        );
+        switch (menu) {
+            case "1":
+                coffee++;
+                total += 10;
+                break;
+            case "2":
+                cacao++;
+                total += 15;
+                break;
+            case "3":
+                orange++;
+                total += 20;
+                break;
+            case "4":
+                alert(
+                    "----------- HÓA ĐƠN THANH TOÁN -----------\n" +
+                    orderList + "\nTổng cộng: " + total + "k\n"
+                );
+                break;
+            default:
+                alert("Vui lòng chọn số từ 1 đến 4!");
+        }
+    } while (menu !== "4");
+</script>
+</body>
+</html>

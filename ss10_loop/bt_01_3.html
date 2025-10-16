@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonanci_01</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c ;
+    let print =" ";
+    for (let i = 1; i <= 20; i++) {
+        print += a + "<br>";
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    document.write(print);
+</script>
+</body>
+</html>

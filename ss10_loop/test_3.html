@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Giải bài toán đảo số-->
+<!--lấy chữ số cuối bằng cách chia 10 lấy dư-->
+<!--ghép chữ số cuối vào dòng đảo-->
+<!--bỏ chữ số cuối bang cach lam tron -> tiếp tục vòng lặp-->
+<script>
+    let n = +prompt("Nhập 1 dãy số");
+    let daoNguoc = 0;
+    while (n !== 0) {
+        let number = n % 10;
+        daoNguoc = daoNguoc * 10 + number;
+        n = Math.floor(n / 10);
+    }
+    alert(daoNguoc)
+</script>
+</body>
+</html>

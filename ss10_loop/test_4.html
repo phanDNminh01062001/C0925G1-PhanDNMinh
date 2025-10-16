@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UCLN_&_BCNN</title>
+</head>
+<body>
+<script>
+
+    let a = +prompt("Nhập số thứ nhất:");
+    let b = +prompt("Nhập số thứ hai:");
+    let x = a;
+    let y = b;
+    while (y !== 0) {
+        let giaTri = y;
+        y = x % y;
+        x = giaTri;
+    }
+    let ucln = x;
+    let bcnn = (a * b) / ucln;
+    alert(
+        "UCLN là: " + ucln + "\n" +
+        "BCNN là: " + bcnn
+    );
+
+</script>
+</body>
+</html>
