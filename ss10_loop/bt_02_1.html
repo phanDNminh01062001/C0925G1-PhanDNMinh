@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let quant = +prompt("Nhập số lượng ");
+    let a = 1;
+    let b = 1;
+    for (let i = 1; i <= quant; i++) {
+        document.write(`${a} <br>`);
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+</script>
 </body>
 </html>

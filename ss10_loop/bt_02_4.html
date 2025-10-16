@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("<pre>");
+    let width = +prompt("Nhập chiều dài hình chữ nhật:");
+    let height = +prompt("Nhập chiều cao hình chữ nhật:");
+    if (width <= 0 || height <= 0) {
+        document.write("Số liệu không hợp lệ");
+    }
+    for (let i = 1; i <= height; i++) {
+        i === 1 || i === height
+            ? document.write("*".repeat(width) + "<br>")
+            : document.write("*" + " ".repeat(width - 2) + "*" + "<br>");
+    }
+    document.write("</pre>");
+</script>
+</body>
+</html>
