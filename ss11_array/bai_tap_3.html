@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập chuỗi cần chuyển đổi");
+    let array = string.split("");
+    for (let i =0; i < array.length; i++){
+        if ("a" <= array[i] && array[i] <= "z"){
+            array [i] = array[i].toUpperCase();
+        }else if ("A" <= array[i] && array[i] <= "Z"){
+            array [i] = array[i].toLowerCase();
+        }
+    }
+    string = array.join("");
+    alert(string);
+</script>
+
+</body>
+</html>

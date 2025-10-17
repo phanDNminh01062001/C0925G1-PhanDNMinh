@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let word = prompt("Nhập từ tiếng Anh:").toLowerCase();
+    //
+    // switch (word) {
+    //     case "ant":
+    //         alert("con kiến");
+    //         break;
+    //     case "bird":
+    //         alert("con chim");
+    //         break;
+    //     case "cat":
+    //         alert("con mèo");
+    //         break;
+    //     case "dog":
+    //         alert("con chó");
+    //         break;
+    //     case "elephant":
+    //         alert("con voi");
+    //         break;
+    //     case "fish":
+    //         alert("con cá");
+    //     default:
+    //         alert("Không tìm thấy");
+    // }
+    let eng = ["ant","bird","cat","dog","elephant","fish"];
+    let vie = ["kiến","chim","mèo","chó","voi","cá"];
+    let word = prompt("Nhập từ tiếng Anh:").toLowerCase();
+    let found = false;
+
+    for (let i = 0; i < eng.length; i++) {
+        if (eng[i] === word) {
+            alert(vie[i]);
+            found = true;
+            break;
+        }
+    }
+    if (!found) {
+        alert("Không tìm thấy");
+    }
+</script>
+</body>
+</html>
