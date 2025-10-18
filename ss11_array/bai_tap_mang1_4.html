@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let elements = +prompt("Nhập số lượng phần tử");
+    let arr = [];
+    for (let i = 0; i < elements; i++) {
+        let numbers;
+        numbers = +prompt(`Nhập phần tử thứ ${i + 1}`);
+        arr.push(numbers);
+    }
+    alert(arr.join());
+    alert(arr.reverse());
+</script>
+</body>
+</html>

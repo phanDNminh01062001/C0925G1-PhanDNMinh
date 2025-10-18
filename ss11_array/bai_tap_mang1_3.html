@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOfElements ;
+    numberOfElements = prompt("Bạn muốn nhập bao nhiêu số");
+    let arr = [];
+    for (let i = 0; i < numberOfElements; i++) {
+        let numbers;
+        numbers = +prompt(`Nhập phần tử thứ ${i + 1}:`);
+        arr.push(numbers);
+    }
+    let max = arr[0];
+    let maxLocation = 0;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            maxLocation = i;
+        }
+    }
+    let avg = 0;
+    for (let i = 0; i < numberOfElements; i++) {
+        avg = avg + arr[i];
+    }
+    alert(arr.join("-"));
+    alert("Giá trị lớn nhất là: " + max + " (ở vị trí thứ " + (maxLocation + 1) + ")");
+    alert("Giá trị trung bình: " + avg/numberOfElements);
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let elements;
+    let count = 0;
+    elements = +prompt("Bạn muốn nhập bao nhiêu phần tử")
+    for (let i = 0; i < elements; i++) {
+        let numbers;
+            numbers = +prompt(`Nhập phần tử thứ ${i + 1}`)
+        arr.push(numbers)
+        if (numbers < 0 ) {
+            count++;
+        }
+    }
+    alert(arr.join("_"))
+    alert(`Mảng có ${count} phần tử âm`);
+</script>
+</body>
+</html>

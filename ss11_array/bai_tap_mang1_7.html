@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        let num = +prompt(`Nhập phần tử thứ ${i + 1}:`);
+        arr.push(num);
+    }
+    let V = +prompt("Nhập số nguyên V cần kiểm tra:");
+    if (arr.includes(V)) {
+        alert("V is in the array");
+    } else {
+        alert("V is not in the array");
+    }
+    alert(arr.join(", "));
+</script>
+</body>
+</html>

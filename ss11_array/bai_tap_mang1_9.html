@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    for (let i = 0; i < 10; i++) {
+        let num = +prompt(`Nhập phần tử thứ ${i + 1} của mảng a:`);
+        a.push(num);
+    }
+    for (let i = 0; i < 10; i++) {
+        let num = +prompt(`Nhập phần tử thứ ${i + 1} của mảng b:`);
+        b.push(num);
+    }
+    let c = a.concat(b);
+    alert(c.join("-"));
+</script>
+</body>
+</html>
