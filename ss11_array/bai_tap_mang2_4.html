@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let arr = prompt("Nhập một chuỗi bất kỳ:");
+    let count = 0;
+    let flag = false;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== ' ' && !flag) {
+            count++;
+            flag = true;
+        } else if (arr[i] === ' ') {
+            flag = false;
+        }
+    }
 
+    alert("Số từ trong chuỗi là: " + count);
+</script>
 </body>
 </html>
