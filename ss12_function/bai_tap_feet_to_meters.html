@@ -6,12 +6,19 @@
 </head>
 <body>
 <script>
-    let feet;
-    let meter;
-    function feetToMeter() {
-        feet = meter * 3.279;
-        meter = feet * 0.395;
+    function meterToFeet() {
+        return meter * 3.279;
     }
+    function feetToMeter() {
+        return feet * 0.395;
+    }
+    let meter = +(prompt("Nhập meter:"));
+    let feet = meterToFeet(meter);
+    alert(`${meter} meter = ${feet} feet`);
+
+    let feetInput = +(prompt("Nhập feet:"));
+    let meterResult = feetToMeter(feetInput);
+    alert(`${feetInput} feet = ${meterResult} meter`);
 </script>
 </body>
 </html>

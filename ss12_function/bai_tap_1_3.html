@@ -8,19 +8,21 @@
 <script>
     function addNumbers(a, b) {
         if (a > b) {
-            alert("Giá trị thứ nhất lớn hơn giá trị thứ hai");
+            return ("Giá trị thứ nhất lớn hơn giá trị thứ hai");
+            // alert("Giá trị thứ nhất lớn hơn giá trị thứ hai");
         } else {
             return a + b;
         }
     }
+
     let num1 = +prompt("Nhập số thứ nhất:");
     let num2 = +prompt("Nhập số thứ hai:");
     let result = addNumbers(num1, num2);
 
-    if (result !== undefined) {
-        alert("Tổng của hai số là: " + result);
-    }
-
+    // if (result !== undefined) {
+    //     alert("Tổng của hai số là: " + result);
+    // }
+    alert(result)
 </script>
 </body>
 </html>
