@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stars1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let stars2 = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function findStar(starName) {
+        for (let i = 0; i < stars1.length; i++) {
+            if (stars1[i] === starName) {
+                return stars2[i];
+            }
+        }
+        return "Không tìm thấy";
+    }
+    let input = prompt("Nhập tên ngôi sao cần tìm");
+    let result = findStar(input);
+
+    if (result !== "Không tìm thấy") {
+        alert(`Ngôi sao ${input} thuộc chòm sao ${result}.`);
+    } else {
+        alert("Không tìm thấy ngôi sao");
+    }
+</script>
+</body>
+</html>

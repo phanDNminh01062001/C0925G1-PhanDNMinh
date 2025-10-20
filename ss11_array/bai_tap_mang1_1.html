@@ -11,7 +11,12 @@
         let num = +prompt(`Nhập phần tử thứ ${i + 1}:`);
         arr.push(num);
     }
-    let result = arr.filter(x => x >= 10);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+        }
+        result.push(arr[i])
+    }
+            // let result = arr.filter(x => x >= 10);// CP: filter(phần tử => điều kiện lọc)
     alert(arr.join(" "));
     alert(result.join(" "));
 </script>
